@@ -14,6 +14,11 @@ h1 {
 	display: none;
 }
 
+h2 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
 #user-input {
 	border-bottom: 5px dotted black;
 	padding: 30px;
