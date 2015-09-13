@@ -1,0 +1,25 @@
+{
+  "name": "ng-mad-lib",
+  "version": "1.0.0",
+  "description": "Basic Angular app of mad libs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencodezen/ngMadLib.git"
+  },
+  "keywords": [
+    "AngularJS"
+  ],
+  "author": "Ben Hong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bencodezen/ngMadLib/issues"
+  },
+  "homepage": "https://github.com/bencodezen/ngMadLib#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
