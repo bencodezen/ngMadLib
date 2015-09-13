@@ -10,7 +10,33 @@ section {
 	padding: 20px;
 }
 
+h1 {
+	display: none;
+}
+
 #user-input {
 	border-bottom: 5px dotted black;
 	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#user-input div {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#user-input h2 {
+	flex-basis: 100%;
+}
+
+label {
+	padding: 10px;
+}
+
+input {
+	padding: 5px;
+	flex: 1;
 }
