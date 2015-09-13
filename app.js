@@ -1,0 +1,1 @@
+var ngMadLibApp = angular.module('ngMadLibApp', []);
