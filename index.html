@@ -16,8 +16,14 @@
 	<section id="user-input">
 		<h2>Your Input!</h2>
 		<div>
-			<label for="female-name">Female Name</label>
-			<input ng-model="femaleName" id="female-name" type="text" />
+			<label for="name">Name</label>
+			<input ng-model="name" id="name" type="text" />
+		</div>
+		<div>
+			<input ng-model="gender" name="gender" type="radio" value="she" id="female" />
+			<label for="female">Female</label>
+			<input ng-model="gender" name="gender" type="radio" value="he" id="male" />
+			<label for="male">Male</label>
 		</div>
 		<div>
 			<label for="job-title">Job Title</label>
@@ -54,8 +60,8 @@
 	</section>
 	<section id="content">
 		<h2>Result</h2>
-		<p><span ng-if="femaleName === ''" class="need-input">Female Name</span>{{ femaleName }} was a <span ng-if="jobTitle === ''" class="need-input">Job Title</span>{{ jobTitle }} who loved technology. Although she loved parts of her job, she absolutely hated <span ng-if="tediousTask === ''" class="need-input">Tedious Task</span>{{ tediousTask }} and <span ng-if="dirtyTask === ''" class="need-input">Dirty Task</span>{{ dirtyTask }}. So, <span ng-if="femaleName === ''" class="need-input">Female Name</span>{{ femaleName }} met with her life mentor <span ng-if="celebrity === ''" class="need-input">Celebrity</span>{{ celebrity }}, who told her to learn how to <span ng-if="uselessSkill === ''" class="need-input">Useless Skill</span>{{ uselessSkill }} with Thinkful. Thinkful didn't offer a course on <span ng-if="uselessSkill === ''" class="need-input">Useless Skill</span>{{ uselessSkill }}, so she studied programming instead.</p>
-		<p>What a great decision! With her new skills, <span ng-if="femaleName === ''" class="need-input">Female Name</span>{{ femaleName }} built a(n) <span ng-if="adjective === ''" class="need-input">Adjective</span>{{adjective}} robot named <span ng-if="obnoxiousCelebrity === ''" class="need-input">Obnoxious Celebrity</span>{{ obnoxiousCelebrity }} that not only loved {{ dirtyTask }} but did it <span ng-if="hugeNumber === ''" class="need-input">Huge Number</span>{{ hugeNumber }}x faster.</p>
+		<p><span ng-if="name === ''" class="need-input">Name</span>{{ name }} was a <span ng-if="jobTitle === ''" class="need-input">Job Title</span>{{ jobTitle }} who loved technology. Although <span ng-if="gender === ''" class="need-input">Gender</span>{{ gender }} loved parts of her job, <span ng-if="gender === ''" class="need-input">Gender</span>{{ gender }} absolutely hated <span ng-if="tediousTask === ''" class="need-input">Tedious Task</span>{{ tediousTask }} and <span ng-if="dirtyTask === ''" class="need-input">Dirty Task</span>{{ dirtyTask }}. So, <span ng-if="name === ''" class="need-input">Name</span>{{ name }} met with her life mentor <span ng-if="celebrity === ''" class="need-input">Celebrity</span>{{ celebrity }}, who told her to learn how to <span ng-if="uselessSkill === ''" class="need-input">Useless Skill</span>{{ uselessSkill }} with Thinkful. Thinkful didn't offer a course on <span ng-if="uselessSkill === ''" class="need-input">Useless Skill</span>{{ uselessSkill }}, so <span ng-if="gender === ''" class="need-input">Gender</span>{{ gender }} studied programming instead.</p>
+		<p>What a great decision! With those new skills, <span ng-if="name === ''" class="need-input">Name</span>{{ name }} built a(n) <span ng-if="adjective === ''" class="need-input">Adjective</span>{{adjective}} robot named <span ng-if="obnoxiousCelebrity === ''" class="need-input">Obnoxious Celebrity</span>{{ obnoxiousCelebrity }} that not only loved {{ dirtyTask }} but did it <span ng-if="hugeNumber === ''" class="need-input">Huge Number</span>{{ hugeNumber }}x faster.</p>
 	</section>
 </body>
 </html>
