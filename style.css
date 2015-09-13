@@ -5,3 +5,12 @@ header {
 	padding-bottom: 10px;
 	border-bottom: 5px dotted black;
 }
+
+section {
+	padding: 20px;
+}
+
+#user-input {
+	border-bottom: 5px dotted black;
+	padding: 30px;
+}
