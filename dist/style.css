@@ -40,7 +40,17 @@ h2 {
 	flex-wrap: wrap;
 }
 
-#user-input div {
+#user-input form {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#user-input form div {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 330px;
   -ms-flex: 1 1 330px;
@@ -62,6 +72,15 @@ h2 {
 	-webkit-flex-basis: 100%;
 	-ms-flex-preferred-size: 100%;
 	flex-basis: 100%;
+}
+
+#user-input input[type="submit"] {
+	-webkit-flex-basis: 100%;
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+	background-color: midnightblue;
+	color: white;
+	margin-top: 10px;
 }
 
 #gender-input input {
