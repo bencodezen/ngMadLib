@@ -13,8 +13,14 @@ var ngMadLibApp = angular.module('ngMadLibApp', [])
 		$scope.submit = function() {
 			if ($scope.madLibForm.$valid) {
 				console.log("Valid!");
+				document.getElementById("user-input").style.display = 'none';
+				document.getElementById("content").style.display = 'block';
 			} else {
 				console.log("Invalid!");
 			}
 		};
+		$scope.restart = function() {
+			document.getElementById("content").style.display = 'none';
+			document.getElementById("user-input").style.display = 'block';
+		}
 	});

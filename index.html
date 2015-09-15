@@ -79,10 +79,11 @@
 	    </ul>
 		</div>
 	</section>
-	<section id="content">
+	<section id="content" ng-show="madLibForm.$submitted && madLibForm.$valid">
 		<h2>Result</h2>
 		<p><span ng-if="name === ''" class="need-input">Name</span>{{ name }} was a <span ng-if="jobTitle === ''" class="need-input">Job Title</span>{{ jobTitle }} who loved technology. Although <span ng-if="gender === ''" class="need-input">Gender</span>{{ gender }} loved parts of her job, <span ng-if="gender === ''" class="need-input">Gender</span>{{ gender }} absolutely hated <span ng-if="tediousTask === ''" class="need-input">Tedious Task</span>{{ tediousTask }} and <span ng-if="dirtyTask === ''" class="need-input">Dirty Task</span>{{ dirtyTask }}. So, <span ng-if="name === ''" class="need-input">Name</span>{{ name }} met with her life mentor <span ng-if="celebrity === ''" class="need-input">Celebrity</span>{{ celebrity }}, who told her to learn how to <span ng-if="uselessSkill === ''" class="need-input">Useless Skill</span>{{ uselessSkill }} with Thinkful. Thinkful didn't offer a course on <span ng-if="uselessSkill === ''" class="need-input">Useless Skill</span>{{ uselessSkill }}, so <span ng-if="gender === ''" class="need-input">Gender</span>{{ gender }} studied programming instead.</p>
 		<p>What a great decision! With those new skills, <span ng-if="name === ''" class="need-input">Name</span>{{ name }} built a(n) <span ng-if="adjective === ''" class="need-input">Adjective</span>{{adjective}} robot named <span ng-if="obnoxiousCelebrity === ''" class="need-input">Obnoxious Celebrity</span>{{ obnoxiousCelebrity }} that not only loved {{ dirtyTask }} but did it <span ng-if="hugeNumber === ''" class="need-input">Huge Number</span>{{ hugeNumber }}x faster.</p>
+		<input type="submit" value="Start Over" ng-click="restart();">
 	</section>
 </body>
 </html>
