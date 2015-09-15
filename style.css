@@ -26,7 +26,12 @@ h2 {
 	flex-wrap: wrap;
 }
 
-#user-input div {
+#user-input form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#user-input form div {
   flex: 1 1 330px;
   display: flex;
   align-items: center;

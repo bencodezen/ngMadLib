@@ -10,4 +10,11 @@ var ngMadLibApp = angular.module('ngMadLibApp', [])
 		$scope.adjective = '';
 		$scope.obnoxiousCelebrity = '';
 		$scope.hugeNumber = '';
+		$scope.submit = function() {
+			if ($scope.madLibForm.$valid) {
+				console.log("Valid!");
+			} else {
+				console.log("Invalid!");
+			}
+		};
 	});
