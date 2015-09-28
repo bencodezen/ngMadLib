@@ -71,6 +71,30 @@ input {
 	line-height: 1.5;
 }
 
+#content {
+  padding: 10px;
+  overflow: hidden;
+}
+
+#user-input {
+  transition: all linear 0.5s;
+  max-height: 100%;
+}
+
+#user-input.ng-hide {
+  opacity: 0;
+  max-height: 0;
+}
+
+#content.ng-hide-add, 
+#content.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+#content.ng-hide {
+  opacity: 0;
+}
+
 .need-input {
 	color: red;
 	border-bottom: 2px solid red;

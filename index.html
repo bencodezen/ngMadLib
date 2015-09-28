@@ -3,9 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Thinkful: Lesson 2.6 - ngMadLib</title>
-	<link rel="stylesheet" type="text/css" href="dist/style.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body ng-app="ngMadLibApp" ng-controller="ngMadLibCtrl">
 	<header>
@@ -13,7 +11,7 @@
 		<img src="img/mad-lib-happy-face.png" alt="Black and white smiley face">
 		<img src="img/ng-mad-libs-logo.png" alt="ngMadLibs logo">
 	</header>
-	<section id="user-input">
+	<section id="user-input" ng-show="!madLibForm.$submitted">
 		<h2>Your Input!</h2>
 		<form name="madLibForm" ng-submit="submit()" novalidate>
 			<div>
@@ -61,7 +59,7 @@
 			</div>
 			<input type="submit" value="Submit">
 		</form>
-		<div ng-if="madLibForm.$submitted && madLibForm.$invalid">
+		<div ng-if="madLibForm.$submitted && madLibForm.$invalid" id="error">
 	    <h3>Error Messages</h3>
 	    <ul>
 	    	<li class="error" ng-if="madLibForm.name.$error.required">Name is required!</li>
@@ -85,5 +83,9 @@
 		<p>What a great decision! With those new skills, <span ng-if="name === ''" class="need-input">Name</span>{{ name }} built a(n) <span ng-if="adjective === ''" class="need-input">Adjective</span>{{adjective}} robot named <span ng-if="obnoxiousCelebrity === ''" class="need-input">Obnoxious Celebrity</span>{{ obnoxiousCelebrity }} that not only loved {{ dirtyTask }} but did it <span ng-if="hugeNumber === ''" class="need-input">Huge Number</span>{{ hugeNumber }}x faster.</p>
 		<input type="submit" value="Start Over" ng-click="restart();">
 	</section>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.4.5/angular-animate.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
